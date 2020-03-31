@@ -1,18 +1,22 @@
-# gif.lib
-This application was used as a tutorial app in the Spring with Hibernate Treehouse course. The app was originally built in the Spring Basics course, and its functionality was extended in the following ways:
- 
-- Adds persisted data, using an H2 database
-- Manages data with Hibernate
+# gif-lib
 
-What this app does:
+#### What does this Application does?
+- gif-lib is web application that enables users to create, edit, delete, view specific, and all gifs or images. It also enables users to create, edit, delete, view specific and all gif categories. Also add gifs to different categories. 
 
-- Serves dynamic web content according to URI, including index and detail pages for categories and GIFs
-- Includes database connectivity, where GIF data is stored
-- Allows a user to perform CRUD (create, read, update, delete) operations on GIF and category data
-- Performs server-side form validation for adding/updating GIFs and categories
-- Uses a database
-- Serves static assets, such as images, fonts, CSS, and JS
+#### Technologies Used
+- H2 Database
+- Spring Boot MVC
+- JPA
 
-What this app does **NOT** do:
-
-- Implement user authentication
+#### How should this be manually tested?
+- Clone this repository
+- Open it in your ide its recommended you use intellij IDEA so you can follow this steps.
+- While being connected to the internet gradle will download all required dependencies.
+- Start the database server by executing the **h2-1.4.190.jar** file located in the project folder, to start the database server credentials are. 
+- - Driver Class: org.h2.Driver
+  - JDBC URL: jdbc:h2:~/test
+  - User Name: sa
+  - password: 
+- Once the database server as started and lunched in the browser, click connect to connect the server.
+- Start the gif-lib server by executing the bootRun command in the gradle window.
+- Go to the url at http://localhost:8080
